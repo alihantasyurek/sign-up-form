@@ -132,12 +132,29 @@ h1 {
   width: 35%;
 }
 
-input {
-  padding: 10px;
-}
 
 .placeholdertext {
   font-size: var(--font-size);
   font-weight: 600;
   width: 50%;
+}
+
+input {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+input[type="password"]:invalid {
+  border: 2px solid red;
+  box-shadow: none;
+  outline: none;
+}
+
+input[type="password"]:focus:invalid {
+  border: 2px solid blue;
+}
+
+input:focus {
+  border: 2px solid blue;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }

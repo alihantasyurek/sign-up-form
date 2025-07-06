@@ -30,11 +30,13 @@
           <h1>Let's Do This</h1>
           <div class="input-area">
             <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name">
+            <input type="text" id="first-name" name="first-name" minlength="3" maxlength="25" pattern="^[A-Za-z]+$"
+              title="Only letters are allowed. No numbers or special characters">
           </div>
           <div class="input-area">
             <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name">
+            <input type="text" id="last-name" name="last-name" minlength="3" maxlength="25" pattern="^[A-Za-z]+$"
+              title="Only letters are allowed. No numbers or special characters">
           </div>
           <div class="input-area">
             <label for="mail">EMAIL</label>
@@ -42,15 +44,16 @@
           </div>
           <div class="input-area">
             <label for="phone">PHONE NUMBER</label>
-            <input type="text" id="phone" name="phone" pattern="\d{10,12}">
+            <input type="text" id="phone" name="phone" pattern="\d{10,12}" maxlength="12"
+              title="Please enter a valid phone number with 10 to 12 digits">
           </div>
           <div class="input-area">
             <label for="pass">PASSWORD</label>
-            <input type="password" id="pass" name="pass">
+            <input type="password" id="pass" name="pass" minlength="8" maxlength="20" required>
           </div>
           <div class="input-area">
             <label for="confirm-pass">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm-pass" name="confirm-pass">
+            <input type="password" id="confirm-pass" name="confirm-pass" minlength="8" maxlength="20" required>
           </div>
         </div>
         <button type="submit" class="leftmarg topmarg">Create Account</button>
