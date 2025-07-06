@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign-up Form</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="image-wrapper">
+      <img src="bookshelf.jpg" alt="bookshelf" class="bookshelf">
+      <p id="credit">Photo by <span class="underlined">Henry Be</span> on <span class="underlined">Unsplash</span></p>
+      <div class="overlay">
+        <img src="sec.png" alt="book icon" id="icon">
+        <p id="logo">BOOKS</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="placeholdertext leftmarg">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize
+          your deepest dreams. </p>
+        <p>Sign up now to get started</p>
+        <p class="marg">You know you want to</p>
+      </div>
+      <form action="#" method="post">
+        <div class="card">
+          <h1>Let's Do This</h1>
+          <div class="input-area">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name">
+          </div>
+          <div class="input-area">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name">
+          </div>
+          <div class="input-area">
+            <label for="mail">EMAIL</label>
+            <input type="email" id="mail" name="mail">
+          </div>
+          <div class="input-area">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="text" id="phone" name="phone" pattern="\d{10,12}">
+          </div>
+          <div class="input-area">
+            <label for="pass">PASSWORD</label>
+            <input type="password" id="pass" name="pass">
+          </div>
+          <div class="input-area">
+            <label for="confirm-pass">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm-pass" name="confirm-pass">
+          </div>
+        </div>
+        <button type="submit" class="leftmarg topmarg">Create Account</button>
+      </form>
+      <div class="log-in leftmarg topmarg">
+        <span>Already have an account?</span>
+        <a href="#">Log in</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
